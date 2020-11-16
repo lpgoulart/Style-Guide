@@ -34,11 +34,11 @@ export const Button: React.FC<ButtonProps> = ({
   label,
   ...props
 }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? 'lpgoulart-button--primary' : 'lpgoulart-button--secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['lpgoulart-button', `lpgoulart-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
