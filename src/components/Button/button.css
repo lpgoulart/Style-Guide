@@ -2,11 +2,22 @@
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
-  border-radius: 3em;
+  border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  outline: none;
+  transition: .5s all
 }
+
+.lpgoulart-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #1ea7fd;
+}
+
+.lpgoulart-button:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #1ea7fd;
+}
+
 .lpgoulart-button--primary {
   color: white;
   background-color: #1ea7fd;
@@ -27,4 +38,11 @@
 .lpgoulart-button--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+
+@media screen and (max-width: 569px) {
+  .lpgoulart-button {
+    display: block;
+    width: 100%;
+  }
 }
